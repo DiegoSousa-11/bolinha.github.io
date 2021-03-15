@@ -8,5 +8,4 @@ Tabela de conteúdos
  * [Cardárpio/Menu](../main/menu.html)
  * [Quem Somos](../main/quem_somos.html)
  * [Contato](../main/contato.html)
- <!--Tela mostrada assim que o email for enviado para o dono da padaria-->
-  * [Confirmação de Email](../main/sucesso.html)
+ * [Confirmação de Email](../main/sucesso.html) <!--Tela mostrada assim que o email for enviado para o dono da padaria-->
