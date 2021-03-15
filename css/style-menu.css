@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../img/folha-fundo-02.png);
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+.cardapio-menu{
+    position: relative;
+    margin: 100px auto;
+    width: 88vw;
+    background-color: white;
+    border: 1px solid black;
+    z-index: 50;
+    box-shadow: -6px 8px 15px black;
+}
+
+.efeito-cardapio{
+    position: static;
+    float: right;
+    margin-right: 3%;
+    height: 500px;
+    z-index: 6;
+    width: 50%;
+    margin-top: 48px;
+    background-color: #1a1a1a;
+}
+
+.alimento{
+    display: flex;
+    padding: 0 5%;
+    margin-bottom: 80px;
+}
+
+.titulo-menu{
+    display: flex;
+    left: 13%;
+    position: relative;
+    font-family: 'Sansita Swashed' ,'Century Gothic', 'sans-serif', 'Arial';
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.titulo-menu h1{
+    margin: 0 50px;
+}
+
+.conteudo .title{
+    display: flex;
+}
+
+.img-alimento img{
+    width: 200px;
+    margin-right: 20px;
+}
+
+.conteudo .title .name, .price{
+    display: flex;
+    font-family: 'Sansita Swashed' ,'Roboto', 'sans-serif', 'Arial';
+    font-size: 50px;
+    width: 420px;
+    color: #FB7C00;
+}
+
+.conteudo .title .price{
+    width: 300px;
+}
+
+.conteudo .descricao{
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+hr{
+    margin-top: 48px;
+    height: 0px;
+    size: 0;
+    width: 600px;
+    margin-right: 20px;
+    color: transparent;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px dashed #707070;
+}
+
+@media (max-width:1500px)
+{
+    .titulo-menu{
+        left: 8vw;
+        display: grid;
+        font-size: 10vw;
+    }
+
+    .titulo-menu img{
+        width: 70vw;
+    }
+
+    .titulo-menu h1{
+        margin: 0;
+        text-align: center;
+    }
+
+    .alimento{
+        display: grid;
+        padding: 0;
+    }
+
+    .conteudo .title{
+        display: grid;
+    }
+
+    .img-alimento img{
+        width: 88vw;
+        margin: 0;
+    }
+
+    .conteudo .title .name{
+        width: 88vw;
+        text-align: center;
+        justify-content: center;
+        order: 2;
+    }
+
+    .conteudo .title .price{
+        width: 88vw;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    .conteudo .descricao{
+        margin-left: 0;
+        width: 88vw;
+        text-align: center;
+    }
+
+    hr{
+        display: none;
+    }
+}

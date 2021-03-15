@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.banner{
+    width: 100%;
+    height: 31vw;
+}
+
+.banner img{
+    position: absolute;
+    width: 100%;
+}
+
+.banner h1{
+    width: 100%;
+    position: relative;
+    color: white;
+    font-size: 120px;
+    font-family: 'Sansita Swashed' ,'Century Gothic', 'sans-serif', 'Arial';
+    top: 10vw;
+    text-align: center;
+}
+
+
+
+.padaria{
+    background-image: url(../img/folha-fundo-02.png);
+    background-attachment: fixed;
+    background-size: contain;
+    padding: 50px 0;
+}
+
+.texto-inicial{
+    text-align: center;
+    font-family: 'Sansita Swashed' ,'Century Gothic', 'sans-serif', 'Arial';
+    font-size: 80px;
+    color: #FB7C00;
+    margin-bottom: 20px;
+}
+
+.desc-inicial{
+    font-size: 25px;
+    width: 60vw;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+
+
+
+.ingredientes, .funcionarios{
+    display: flex;
+}
+
+.ingredientes .texto, .funcionarios .texto{
+    width: 50vw;
+    margin: auto 0; 
+}
+
+.ingredientes .texto h1, .funcionarios .texto h1{
+    text-align: center;
+    font-family: 'Sansita Swashed' ,'Century Gothic', 'sans-serif', 'Arial';
+    font-size: 60px;
+    color: #FB7C00;
+    margin-bottom: 20px;
+}
+
+.ingredientes hr, .funcionarios hr{
+    margin: 20px auto;
+    width: 10vw;
+}
+
+.ingredientes .texto p, .funcionarios .texto p{
+    font-size: 28px;
+    width: 40vw;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #1A1A1A;
+}
+
+.imagem{
+    margin-bottom: -4px;
+}
+
+.imagem img{
+    width: 49.60vw;
+}
+
+
+@media (max-width:1500px)
+{
+    .texto-inicial{
+        font-size: 67px;
+    }
+
+    .banner h1{
+        font-size: 14vw;
+        top: 5vw;
+    }
+
+    .desc-inicial{
+        width: 74vw;
+    }
+
+    .ingredientes, .funcionarios {
+        display: grid;
+    }
+
+    .imagem img {
+        width: 100vw;
+        margin-bottom: 30px;
+    }
+
+    .ingredientes .texto, .funcionarios .texto {
+        width: 100vw;
+        margin: auto 0;
+        order: 2;
+    }
+
+    .ingredientes .texto h1, .funcionarios .texto h1 {
+        font-size: 55px;
+    }
+
+    .ingredientes .texto p, .funcionarios .texto p {
+        width: 80vw;
+    }
+}

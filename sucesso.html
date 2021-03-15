@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/47e200f5b5.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/donut-1727496_1920.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <title>Bolinha</title>
+</head>
+<body>
+    <div id="spinner" class="spinner"></div>
+    <div class="conclusao">
+        <div id="concluiu" class="concluiu"><i class="fas fa-check"></i></div>
+        <h1 id="texto-concluiu" class="typing-animation">Sua mensagem foi enviada!!</h1>
+        <h1 id="texto-concluiu2" class="typing-animation2">Obrigado pelo contato!!</h1>
+    </div>
+</body>
+<style>
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 96vh;
+    }
+    .spinner{
+        border: 8px solid rgba(0, 0, 0, .1);
+        border-left-color: #1a1a1a;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+    }
+
+    .conclusao h1{
+        margin: 12px auto;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 0;
+        font-size: 30px;
+
+        border-right: 2px solid #1a1a1a;
+        color: #1a1a1a;
+        font-family: 'Josefin Sans', 'sans-serif';
+
+        display: none;
+    }
+
+    .concluiu{
+        text-align: center;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 8px solid rgba(0, 0, 0, 0);
+        height: 60px;
+        width: 60px;
+        background-color: #2daa5a;
+        border-radius: 50%;
+        animation: fade 1.5s linear;
+        transition: all 0.5s;
+
+        display: none;
+    }
+
+    .concluiu{
+        color: white;
+        font-size: 40px;
+    }
+
+    .typing-animation{
+        animation: BlinkCursor 500ms steps(40) infinite normal, typing 4s steps(40) 1s normal;
+    }
+
+    .typing-animation2{
+        animation: BlinkCursor 500ms steps(40) infinite normal, typing2 4s steps(40) 1s normal;
+    }
+
+    @keyframes typing{
+        from{
+            width: 0;
+        }
+        to{
+            width: 12.8em;
+        }
+    }
+
+    @keyframes typing2{
+        from{
+            width: 0;
+        }
+        to{
+            width: 10.8em;
+        }
+    }
+
+    @keyframes spin{
+        to{transform: rotate(360deg);}
+    }
+
+    @keyframes fade{
+        from{background-color: white;}
+        to{background-color: #2daa5a;}
+    }
+
+    @keyframes BlinkCursor{
+        from{
+            border-right-color: #1a1a1a;
+        }
+        to{
+            border-right-color: transparent;
+        }
+    }
+
+    @media (max-width:400px)
+    {
+        .conclusao h1{
+            font-size: 7vw;
+        }
+    }
+</style>
+<script>
+    window.setTimeout(function() {
+        document.getElementById('spinner').style.display = "none";
+        document.getElementById('concluiu').style.display = "flex";
+        window.setTimeout(function(){
+            document.getElementById('texto-concluiu').style.display = "flex";
+            window.setTimeout(function(){
+                document.getElementById('texto-concluiu').style.width = "12.8em";
+                document.getElementById('texto-concluiu').style.border = "none"
+                document.getElementById('texto-concluiu2').style.display = "flex";
+                window.setTimeout(function() {
+                    document.getElementById('texto-concluiu2').style.width = "10.8em";
+                    window.setTimeout(function(){
+                        window.location = "contato.html";
+                    },3000);
+                },5000);
+            }, 5000);
+        }, 1500);
+    }, 3000)
+</script>
+</html>

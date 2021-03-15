@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@300;700&family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/donut-1727496_1920.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/47e200f5b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-menu.css">
+    <title>Bolinha</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html"><img src="img/Logo.png" alt="Logo"></a>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="quem_somos.html">Quem somos</a>
+            <a href="contato.html">Contato</a>
+        </div>
+        <i id="bars" onclick="menu()" class="fas fa-bars"></i>
+    </header>
+    <!-- Menu Rolável para celulares -->
+    <div id="menu-cel" class="menu-cel">
+        <a href="index.html"><button>Home</button></a>
+        <a href="menu.html"><button>Menu</button></a>
+        <a href="quem_somos.html"><button>Quem somos</button></a>
+        <a href="contato.html"><button>Contato</button></a>
+    </div>
+    <!-- Início do menu -->
+    <div class="efeito-cardapio"></div>
+    <div class="cardapio-menu">
+        <div class="titulo-menu">
+            <img src="img/divider.png" alt="Folha esquerda" width="50%">
+            <h1>Menu</h1>
+            <img src="img/divider.png" alt="Folha esquerda" width="50%">
+        </div>
+        <!-- Alimento 1 -->
+        <div class="alimento">
+            <div class="img-alimento">
+                <img src="img/Bolo de chocolate.jpg" alt="Imagem-produto">
+            </div>
+            <div class="conteudo">
+                <div class="title">
+                    <h1 class="name">Bolo de chocolate</h1>
+                    <hr>
+                    <h1 class="price">R$ 29,90</h1>
+                </div>
+                <div class="descricao">
+                    <p>Bolo com uma incrível e deliciosa cobertura de chocolate</p>
+                </div>
+            </div>
+        </div>
+        <!-- Alimento 2 -->
+        <div class="alimento">
+            <div class="img-alimento">
+                <img src="img/pão de queijo.jpg" alt="Imagem-produto">
+            </div>
+            <div class="conteudo">
+                <div class="title">
+                    <h1 class="name">Pão de queijo</h1>
+                    <hr>
+                    <h1 class="price">R$ 20,90</h1>
+                </div>
+                <div class="descricao">
+                    <p>1kg pães de queijo deliciosos</p>
+                </div>
+            </div>
+        </div>
+        <!-- Alimento 3 -->
+        <div class="alimento">
+            <div class="img-alimento">
+                <img src="img/Croissant.jpg" alt="Imagem-produto">
+            </div>
+            <div class="conteudo">
+                <div class="title">
+                    <h1 class="name">Croissant</h1>
+                    <hr>
+                    <h1 class="price">R$ 5,50</h1>
+                </div>
+                <div class="descricao">
+                    <p>Croissants recheados com as melhores gostosuras</p>
+                </div>
+            </div>
+        </div>
+        <!-- Alimento 4 -->
+        <div class="alimento">
+            <div class="img-alimento">
+                <img src="img/cupcake.jpg" alt="Imagem-produto">
+            </div>
+            <div class="conteudo">
+                <div class="title">
+                    <h1 class="name">Cupcake</h1>
+                    <hr>
+                    <h1 class="price">R$ 4,60</h1>
+                </div>
+                <div class="descricao">
+                    <p>Cupckes deliciosos, feitos com amor e carinho</p>
+                </div>
+            </div>
+        </div>
+        <!-- Alimento 5 -->
+        <div class="alimento">
+            <div class="img-alimento">
+                <img src="img/Cafe.jpg" alt="Imagem-produto">
+            </div>
+            <div class="conteudo">
+                <div class="title">
+                    <h1 class="name">Café</h1>
+                    <hr>
+                    <h1 class="price">R$ 3,00</h1>
+                </div>
+                <div class="descricao">
+                    <p>Em nossa padaria temos os mais variados tipos de cafés</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="conteudo">
+            <p>© 2020 Bolinha | Criado por Diego Sousa</p>
+        </div>
+    </footer>
+    <script src="Js/script.js"></script>
+</body>
+</html>

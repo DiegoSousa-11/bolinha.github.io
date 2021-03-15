@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@300;700&family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/donut-1727496_1920.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/47e200f5b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-contato.css">
+    <link rel="stylesheet" href="css/style-quem_somos.css">
+    <title>Bolinha</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html"><img src="img/Logo.png" alt="Logo"></a>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="quem_somos.html">Quem somos</a>
+            <a href="contato.html">Contato</a>
+        </div>
+        <i id="bars" onclick="menu()" class="fas fa-bars"></i>
+    </header>
+    <!-- Menu Rolável para celulares -->
+    <div id="menu-cel" class="menu-cel">
+        <a href="index.html"><button>Home</button></a>
+        <a href="menu.html"><button>Menu</button></a>
+        <a href="quem_somos.html"><button>Quem somos</button></a>
+        <a href="contato.html"><button>Contato</button></a>
+    </div>
+    <!-- Banner Contato -->
+    <div class="banner">
+        <img src="img/Banner-Contato.jpg" alt="Banner: Contato">
+        <h1>Quem Somos</h1>
+    </div>
+    <form class="form_contato" action="https://api.staticforms.xyz/submit" method="POST">
+        <h1>Entre em contato</h1>
+        <hr color="#1a1a1a">
+        <p>Envie sua mensagem preenchendo o formulário abaixo!</p>
+
+        <input type="hidden" name="accessKey" value="2d291d0c-8c87-459e-a671-470a52d38b31">
+        <!-- Incio do formulário -->
+        <div class="nome">
+            <label for="nome_completo">Nome Completo</label>
+            <input type="text" name="name" id="nome_completo" placeholder="Nome Completo">
+        </div>
+        <div class="email">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Ex: seuemail@gmail.com">
+        </div>
+        <div class="tel">
+            <label for="tel">Telefone</label>
+            <input type="tel" name="phone" id="tel" placeholder="(11)98578-9874">
+        </div>
+        <div class="msg">
+            <label for="msg">Sua Mensagem</label>
+            <textarea name="message" id="msg" cols="30" rows="10"></textarea>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox" >
+            <label for="checkbox">Desejo receber uma confirmação por email!!</label>
+        </div>
+        <input type="hidden" name="redirectTo" value="http://frescores.ezyro.com/sucesso.html">
+        <input class="button" type="submit" value="Enviar mensagem">
+
+    </form>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.1740854233512!2d-46.77509056593343!3d-23.63393583243332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5477b80883f9%3A0x76fe952a3abb742c!2sPra%C3%A7a%20Do%20Campo%20Limpo!5e0!3m2!1spt-BR!2sbr!4v1607727791399!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <footer>
+        <div class="conteudo">
+            <p>© 2020 Bolinha | Criado por Diego Sousa</p>
+        </div>
+    </footer>
+    <script src="Js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@300;700&family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/donut.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/47e200f5b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bolinha</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html"><img src="img/Logo.png" alt="Logo"></a>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="quem_somos.html">Quem somos</a>
+            <a href="contato.html">Contato</a>
+        </div>
+        <i id="bars" onclick="menu()" class="fas fa-bars"></i>
+    </header>
+    <!-- Menu Rolável para celulares -->
+    <div id="menu-cel" class="menu-cel">
+        <a href="index.html"><button>Home</button></a>
+        <a href="menu.html"><button>Menu</button></a>
+        <a href="quem_somos.html"><button>Quem somos</button></a>
+        <a href="contato.html"><button>Contato</button></a>
+    </div>
+    <!-- Banners -->
+    <section onmousemove="moveslider()" onmouseout="exitslider()" class="sliders">
+        <div id="slider" class="slider">
+            <img src="img/andy-li-RndRFJ1v1kk-unsplash.jpg" alt="">
+            <img src="img/evgeni-tcherkasski-mXOlDLaInFs-unsplash.jpg" alt="">
+            <img src="img/mae-mu-BxsGyQwjwaw-unsplash.jpg" alt="">
+            <img src="img/Banner04.jpg" alt="">
+        </div>
+        <div id="btns" class="btns">
+            <div id="btn1" onclick="btn1()" class="button-slide active"></div>
+            <div id="btn2" onclick="btn2()" class="button-slide"></div>
+            <div id="btn3" onclick="btn3()" class="button-slide"></div>
+            <div id="btn4" onclick="btn4()" class="button-slide"></div>
+        </div>
+        <div id="arrows" class="arrows">
+            <i onclick="moveleft()" class="fas fa-angle-left"></i>
+            <i onclick="moveright()" class="fas fa-angle-right"></i>
+        </div>
+    </section>
+    <!-- Cardápio -->
+    <section class="cardapio">
+        <div class="titulo-cardapio">
+            <h1>Cardápio</h1>
+        </div>
+        <h1 class="descricao">Pães deliciosos e fresquinhos</h1>
+        <div class="itens_cardapio">
+            <div class="item">
+                <img src="img/Imagem1.jpg" alt="Rosquinhas">
+                <h3>Rosquinhas recheadas</h3>
+            </div>
+            <div class="item">
+                <img src="img/Imagem2.jpg" alt="Croissant">
+                <h3>Croissant</h3>
+            </div>
+            <div class="item">
+                <img src="img/Imagem3.jpg" alt="Bolo">
+                <h3>Bolos confeitados</h3>
+            </div>
+        </div>
+        <a class="btn_ver_mais" href="menu.html"><button class="btn_ver_mais">VER MAIS</button></a>
+    </section>
+    <!-- Boas vindas e quem somos -->
+    <section class="sobre_nos">
+        <div class="texto">
+            <h1>Bem Vindo</h1>
+            <hr width="200px">
+            <p>Seja muito bem vindo ao site de uma das melhores e mais conceituadas padarias de São Paulo, somos conhecidos 
+                por usar os melhores ingredientes na fabricação de todos os alimentos e pelos nossos ótimos profissionais !!
+            </p>
+            <a class="btn_ver_mais" href="quem_somos.html"><button class="btn_ver_mais">MAIS SOBRE NÓS</button></a>    
+        </div>
+        <div class="imagem">
+            <img src="img/Massa.jpg" alt="Massa sendo feita">
+        </div>
+    </section>
+    <!-- Parte falando sobre a localização e contato -->
+    <section class="contato">
+        <div class="imagem">
+            <img src="img/Imagem-Pedido.jpg" width="100%" alt="Preparo Pão">
+        </div>
+        <div class="texto">
+            <h1>Como efetuar o pedido</h1>
+            <hr width="200px">
+            <p>Temos diversas filiais em São Paulo, tendo nossa sede situada na Av. Morrinho, 209. Em nossa padaria, temos tanto pedidos
+                á distância quanto presencialmente, para pedir á distância basta ciclar no botão abaixo para saber mais sobre esta modalidade.
+            </p>
+            <a class="btn_ver_mais" href="contato.html"><button class="btn_ver_mais">CONTATO</button></a>
+        </div>
+    </section>
+    <!-- Onde pode nos encontrar também -->
+    <section class="onde_encontrar">
+        <h1>Estamos também</h1>
+        <div class="marcas">
+            <img class="logo-uber" src="img/uber-eats.png" width="160px" alt="Logo UberEats">
+            <img class="logo-ifood" src="img/download.png" alt="Logo Ifood">
+            <img class="logo-rappi" src="img/rappi.png" width="200px" alt="Logo Rappi">
+        </div>
+    </section>
+    <!-- Local Telefone -->
+    <section class="telefone">
+        <div class="background">
+            <h1 class="title">Ligue e faça seu pedido</h1>
+            <h1 class="descricao">05784-8146</h1>
+        </div>
+    </section>
+    <!-- Rodapé -->
+    <footer>
+        <div class="conteudo">
+            <p>© 2020 Bolinha | Criado por Diego Sousa</p>
+        </div>
+    </footer>
+    <script src="Js/script.js"></script>
+</body>
+</html>

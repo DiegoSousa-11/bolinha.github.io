@@ -1,0 +1,557 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    height: 100px;
+    background-color: #1A1A1A;
+    padding: 0 10%;
+}
+
+.logo{
+    display: flex;
+    margin: auto 0;
+}
+
+.menu{
+    margin: auto 0;
+    margin-left: auto;
+}
+
+.menu a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 22px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+.menu a:hover{
+    opacity: 50%;
+}
+
+/* Banner */
+
+.sliders{
+    overflow: hidden;
+}
+
+.slider{
+    width: 100%;
+    display: flex;
+    transition: 0.2s; 
+}
+
+.slider img{
+    width: 100%;
+}
+
+/* Controladores */
+
+.sliders i{
+    color: white;
+    margin-left: 1.2%;
+    font-size: 70px;
+    position: relative;
+    top: -480px;
+    cursor: pointer;
+}
+
+.fa-angle-left{
+    margin-right: 92%;
+}
+
+.btns{
+    position: relative;
+    margin-top: -30px;
+    margin-bottom: 18px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.button-slide{
+    cursor: pointer;
+    margin: 0 1.5px;
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border: 5px solid #1A1A1A;
+    border-radius: 360%;
+}
+
+.btns .active{
+    cursor: pointer;
+    margin: 0 1.5px;
+    width: 10px;
+    height: 10px;
+    background-color: #1A1A1A;
+    border: 4px solid white;
+    border-radius: 360%;
+}
+
+/* Fim dos Controladores */
+
+/* Fim Banner */
+
+/*Início cardápio*/
+.titulo-cardapio{
+    margin: 0 auto;
+    background-color: #1A1A1A;
+    width: 400px;
+    height: 90px;
+    text-align: center;
+
+    position: relative;
+    top: -76px;
+}
+
+.titulo-cardapio h1{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
+    font-family: 'Roboto', sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    color: white;
+}
+
+.cardapio{
+    text-align: center;
+}
+
+.cardapio .descricao{
+    text-align: center;
+    font-family: 'Sansita Swashed' ,'Century Gothic', 'sans-serif', 'Arial';
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.itens_cardapio{
+    display: flex;
+    justify-content: center;
+}
+
+.itens_cardapio img{
+    width: 300px;
+}
+
+.itens_cardapio .item{
+    margin: 0 60px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.itens_cardapio .item h3{
+    margin-top: 20px;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    width: 300px;
+}
+
+.btn_ver_mais{
+    cursor: pointer;
+    height: 50px;
+    width: 180px;
+    Background-color: #1A1A1A;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    margin-bottom: 100px;
+    transition: all 0.5s;
+}
+
+.btn_ver_mais:hover{
+    Background-color: white;
+    border: 1px solid #1A1A1A;
+    color: #1A1A1A;
+    transition: all 0.5s;
+}
+
+/* Fim do cardápio */
+
+/*Início do sobre nós*/
+.sobre_nos{
+    display: flex;
+    padding: 100px 150px;
+    text-align: center;
+    background-image: url("../img/folha-fundo-02.png");
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+.sobre_nos .texto{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.sobre_nos .texto h1{
+    font-family: 'Sansita Swashed' ,'Century Gothic', 'sans-serif', 'Arial';
+    font-size: 80px;
+    font-weight: bold;
+    color: #fb7c00;
+}
+
+.sobre_nos .texto hr{
+    margin: 20px auto;
+    height: 2px;
+    background-color: #1A1A1A;
+    border: none;
+}
+
+.sobre_nos .texto p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: #292626;
+}
+
+.sobre_nos img{
+    width: 750px;
+    border-radius: 25px;
+    margin-right: 90px;
+    margin-top: 10px;
+}
+
+.sobre_nos .btn_ver_mais{
+    margin-top: 60px;
+    width: 200px;
+}
+
+/* Fim Sobre nós */
+
+/*Início Contato */
+.contato{
+    width: 100%;
+    display: flex;
+}
+
+.contato .imagem{
+    width: 50%;
+} 
+
+.contato .texto{
+    width: 40%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: #292626;
+
+    margin: auto auto;      
+}
+
+.contato hr{
+    margin: 20px auto;
+    height: 2px;
+    background-color: #1A1A1A;
+    border: none;
+}
+
+.contato .texto h1{
+    font-family: 'Sansita Swashed' ,'Century Gothic', 'sans-serif', 'Arial';
+    font-size: 65px;
+    font-weight: bold;
+    color: #fb7c00;
+}
+
+.contato .texto p {
+    margin-bottom: 40px;
+}
+
+/* Fim contato */
+
+/* Inicio "Estamos Também" */
+.onde_encontrar{
+    text-align: center;
+    width: 100%;
+    padding: 60px 0;
+}
+
+.onde_encontrar h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+}
+
+.onde_encontrar .marcas{
+    margin-top: -40px;
+}
+
+.onde_encontrar .logo-ifood{
+    position: relative;
+    top: 50px;
+}
+
+.onde_encontrar .logo-rappi{
+    position: relative;
+    top:-35px;
+}
+
+.onde_encontrar img{
+    margin: 0 100px;
+}
+
+/* Início telefone */
+.telefone{
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/henry-co-fhT1fqukEK8-unsplash.jpg-1.jpg);
+}
+
+.telefone .background{
+    text-align: center;
+    position: relative;
+    top: 43%;
+}
+
+.telefone .background .title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.telefone .background .descricao{
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+footer{
+    height: 60px;
+    background-color: #1A1A1A;
+}
+
+footer .conteudo{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
+    font-family: 'Josefin Sans',sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+}
+
+
+.fa-bars{
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.menu-cel{
+    visibility: hidden;
+    height: 0px;
+    display: grid;
+    color: #1A1A1A;
+    text-decoration: none;
+}
+
+.menu-cel button{
+    font-family: 'Josefin sans', 'sans-serif', 'Arial';
+    font-size: 25px;
+    width: 100%;
+    height: 60px;
+    font-weight: bold;
+    background-color: white;
+    border: 0;
+}
+
+.menu-cel button:focus{
+    background-color: #e9e9e9;
+    outline: 0;
+}
+
+
+/* ---------------- RESPONSIVIDADE ---------------- */
+@media (min-width:0px) and (max-width:950px)
+{
+    .menu{
+        visibility: hidden;
+    }
+
+    .menu-cel{
+        visibility: hidden;
+        transition: 0.1s;
+    }
+
+    .fa-bars{
+        visibility: visible;
+        font-size: 50px;
+        margin: auto 0;
+        color: white;
+    }
+}
+
+@media (min-width:370px) and (max-width: 550px)
+{
+    .logo img{
+        width: 200px;
+    }
+
+    header{
+        padding: 0 10px;
+    }
+}
+
+@media (min-width:0px) and (max-width: 360px)
+{
+    .logo img{
+        width: 180px;
+    }
+
+    header{
+        padding: 0 10px;
+    }
+}
+
+@media (max-width:500px)
+{
+    .titulo-cardapio{
+        width: 100%;
+        margin-top: -19.5%;
+    }
+}
+
+@media (min-width:0px) and (max-width: 340px)
+{
+    .logo img{
+        width: 180px;
+    }
+
+    header{
+        padding: 0 10px;
+    }
+
+    .fa-bars{
+        position: relative;
+        right: 40px;
+    }
+
+    .titulo-cardapio{
+        margin-top: -22%;
+    }
+}
+
+@media (max-width:1150px)
+{
+    .itens_cardapio{
+        display: grid;
+    }
+
+    .itens_cardapio .item img{
+        width: 90%;
+    }
+
+    .itens_cardapio .item h3{
+        width: 100%;
+    }
+}
+
+@media (max-width:1500px)
+{
+    .btn_ver_mais{
+        margin-bottom: 50px;
+    }
+
+    .sobre_nos{
+        display: grid;
+        width: 100%;
+        padding: 0 0;
+        justify-items: center;
+    }
+
+    .sobre_nos .imagem img{
+        width: 80%;
+        margin-right: 0;
+        border-radius: 0px;
+    }
+
+    .sobre_nos .texto hr{
+        width: 20%;
+    }
+
+    .sobre_nos .texto{
+        width: 80%;
+        order: 2;
+        margin: 70px auto;
+    }
+
+    .sobre_nos .btn_ver_mais{
+        width: 200px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+
+    .contato{
+        display: grid;
+    }
+
+    .contato .imagem{
+        width: 100%;
+    }
+
+    .contato .texto{
+        width: 80%;
+        margin: 70px auto;
+    }
+
+
+
+    .onde_encontrar{
+        padding: 30px 0;
+    }
+
+    .onde_encontrar .marcas{
+        display: grid;
+        margin-top: 70px;
+    }
+
+    .onde_encontrar img{
+        margin: 30px auto;
+    }
+
+    .onde_encontrar .logo-ifood {
+        position: relative;
+        top: 0px;
+    }
+
+    .onde_encontrar .logo-rappi {
+        position: relative;
+        top: 0px;
+    }
+
+
+
+    .telefone .background {
+        text-align: center;
+        position: relative;
+        top: 30%;
+    }
+
+    .telefone .background .descricao{
+        margin-top: 20px;
+        font-size: 50px;
+    }
+
+
+
+    footer{
+        padding: 10px 20px;
+        line-height: 30px;
+    }
+
+
+
+    .arrows{
+        visibility: hidden;
+    }
+}
