@@ -1,2 +1,3 @@
-# bolinha.github.io
-Site para uma padaria fictícia
+<h1> Padaria Bolinha </h1>
+
+<p> Este site foi desenvolvido em HTML, CSS e Java Script visando o aprendizado, logo, todo conteúdo do mesmo é fictício </p>
