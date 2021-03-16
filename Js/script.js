@@ -1,5 +1,7 @@
 window.addEventListener("load", function(e){
     menu();
+    // Atualizar data do rodapé automaticamente
+    document.getElementById('copyright').innerHTML = '© ' + new Date().getUTCFullYear() + ' Bolinha | Criado por Diego de Sousa';
 })
 
 var slide_index = 1;
